@@ -1,7 +1,7 @@
 package alg
 
 import (
-	"xxx/complexity/graph"
+	"github.com/iimos/gorka"
 )
 
 // ClusteringCoefLocal calculates a local clustering coefficient of the node.

@@ -2,7 +2,7 @@ package gralang
 
 import (
 	"testing"
-	"xxx/complexity/graph"
+	"github.com/iimos/gorka"
 )
 
 func TestGralang(t *testing.T) {

@@ -1,7 +1,7 @@
 package graph
 
 import (
-	"xxx/complexity/graph/generic/queue"
+	"github.com/iimos/gorka/generic/queue"
 )
 
 // NodeQueue is a thread safe FIFO queue

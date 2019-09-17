@@ -5,9 +5,9 @@ package main
 
 import (
 	"fmt"
-	"xxx/complexity/graph"
-	"xxx/complexity/graph/alg"
-	"xxx/complexity/graph/gralang"
+	"github.com/iimos/gorka"
+	"github.com/iimos/gorka/alg"
+	"github.com/iimos/gorka/gralang"
 )
 
 func main() {

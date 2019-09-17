@@ -3,8 +3,8 @@ package alg
 import (
 	"math"
 	"testing"
-	"xxx/complexity/graph"
-	"xxx/complexity/graph/gralang"
+	"github.com/iimos/gorka"
+	"github.com/iimos/gorka/gralang"
 )
 
 const floatEqualityThreshold = 1e-4

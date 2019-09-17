@@ -2,7 +2,7 @@ package graph
 
 import (
 	"fmt"
-	"xxx/complexity/graph/types"
+	"github.com/iimos/gorka/types"
 )
 
 // Node is a graph node

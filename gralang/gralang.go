@@ -3,7 +3,7 @@ package gralang
 import (
 	"errors"
 	"fmt"
-	"xxx/complexity/graph/types"
+	"github.com/iimos/gorka/types"
 )
 
 const (

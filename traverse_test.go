@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"strings"
 	"testing"
-	"xxx/complexity/graph/gralang"
+	"github.com/iimos/gorka/gralang"
 )
 
 func TestBFSDFS(t *testing.T) {

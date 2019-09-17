@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 	"sync"
-	"xxx/complexity/graph/types"
+	"github.com/iimos/gorka/types"
 )
 
 // Graph is a graph
