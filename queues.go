@@ -1,4 +1,4 @@
-package graph
+package gorka
 
 import (
 	"github.com/iimos/gorka/generic/queue"

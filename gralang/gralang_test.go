@@ -82,7 +82,7 @@ func TestGralang(t *testing.T) {
 	}
 
 	for i, c := range cases {
-		g := graph.New()
+		g := gorka.New()
 		err := Parse(g, c.text)
 		if err != nil {
 			t.Errorf("#%d: parse error: %s", i, err)
@@ -123,7 +123,7 @@ func TestGralangSyntaxErrors(t *testing.T) {
 	}
 
 	for i, text := range cases {
-		g := graph.New()
+		g := gorka.New()
 		err := Parse(g, text)
 		if err == nil {
 			t.Errorf("#%d: '%s' parsed without error", i, text)
@@ -142,7 +142,7 @@ func TestBadGraph(t *testing.T) {
 func BenchmarkParse(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		b.StopTimer()
-		g := graph.New()
+		g := gorka.New()
 		b.StartTimer()
 		Parse(g, `
 			a -- b c d

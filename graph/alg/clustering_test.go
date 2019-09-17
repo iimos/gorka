@@ -28,7 +28,7 @@ func TestClusteringCoefLocal(t *testing.T) {
 	}
 
 	for i, c := range cases {
-		g := graph.New()
+		g := gorka.New()
 		err := gralang.Parse(g, c.s)
 		if err != nil {
 			t.Errorf("#%d. Parse error: %s", i, err)
@@ -61,7 +61,7 @@ func TestClusteringCoef(t *testing.T) {
 	}
 
 	for i, c := range cases {
-		g := graph.New()
+		g := gorka.New()
 		err := gralang.Parse(g, c.s)
 		if err != nil {
 			t.Errorf("#%d. Parse error: %s", i, err)

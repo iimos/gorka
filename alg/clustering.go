@@ -5,11 +5,11 @@ import (
 )
 
 // ClusteringCoefLocal calculates a local clustering coefficient of the node.
-func ClusteringCoefLocal(g graph.Graph, n graph.Node) float32 {
+func ClusteringCoefLocal(g gorka.Graph, n gorka.Node) float32 {
 	var triplets, triangles int
 
-	g.NeighbourIter(n, func(u graph.Node) bool {
-		g.NeighbourIter(n, func(v graph.Node) bool {
+	g.NeighbourIter(n, func(u gorka.Node) bool {
+		g.NeighbourIter(n, func(v gorka.Node) bool {
 			if u.ID() != v.ID() {
 				triplets++
 				if g.HasEdgeBetween(u, v) || g.HasEdgeBetween(v, u) {
@@ -29,9 +29,9 @@ func ClusteringCoefLocal(g graph.Graph, n graph.Node) float32 {
 }
 
 // ClusteringCoef calculates clustering coefficient of the graph
-func ClusteringCoef(g graph.Graph) float32 {
+func ClusteringCoef(g gorka.Graph) float32 {
 	var sum float32
-	g.NodeIter(func(n graph.Node) bool {
+	g.NodeIter(func(n gorka.Node) bool {
 		sum += ClusteringCoefLocal(g, n)
 		return true
 	})

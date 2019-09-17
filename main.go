@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	g := graph.New()
+	g := gorka.New()
 	err := gralang.Parse(g, `
 		a -> b c d
 		b -> c
@@ -32,7 +32,7 @@ func experimentErdosRandomGraph() {
 		tot := 100
 		yes := 0
 		for i := 0; i < tot; i++ {
-			g, err := graph.NewRandom(20, p)
+			g, err := gorka.NewRandom(20, p)
 			if err != nil {
 				panic(err)
 			}
