@@ -1,4 +1,4 @@
-package main
+package gorka
 
 type myint int64
 
