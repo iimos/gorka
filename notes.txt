@@ -1,0 +1,11 @@
+Ориентировка
+|nodes| = 1_500_000
+|edges| = 200_000
+
+# How to store edges.
+1. Adjecency matrix of bits: (1_500_000**2) / (8*1024*1024*1024) = 260 Gb
+2. DOK: map[int,int] = w: 32*2*200_000 / (8*1024*1024*1024) = 2 Mb
+
+osm stat: https://www.openstreetmap.org/stats/data_stats.html
+|edges| = 0.12 * |nodes|
+
